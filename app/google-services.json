@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "186877611280",
+    "project_id": "medi-consult-project",
+    "storage_bucket": "medi-consult-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186877611280:android:6b6f688f5c6aad884c2995",
+        "android_client_info": {
+          "package_name": "com.example.medi_consult"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186877611280-88u7oq8ic1hm55kekh4ksjlo544oa3ra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhad7Qujdy4vtnr-QzLkfdJlqPw6PJNXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "186877611280-88u7oq8ic1hm55kekh4ksjlo544oa3ra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

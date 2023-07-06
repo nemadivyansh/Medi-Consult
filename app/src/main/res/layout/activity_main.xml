@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainactivity_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:alpha="0.5"
+            android:scaleType="centerCrop"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginPageEmailTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/emailHint">
+
+            <!--this is the actual edit text which takes the input-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginPageEmailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginPagePasswordTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="32dp"
+            android:layout_below="@id/loginPageEmailTextField"
+            android:hint="@string/passwordHint">
+
+            <!--this is the actual edit text which takes the input-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginPagePasswordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginPagePasswordTextField"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioPatient"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Patient"/>
+
+            <RadioButton
+                android:id="@+id/radioDoctor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Doctor"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewErrorLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20px"
+            android:layout_marginEnd="32dp"
+            android:layout_below="@id/radiogroup"
+            android:text="@string/invalidCredentialsMsg"
+            android:layout_centerHorizontal="true"
+            android:textColor="#9C1C1C"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textViewSelectRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20px"
+            android:layout_marginEnd="32dp"
+            android:layout_below="@id/radiogroup"
+            android:text="Select type of user"
+            android:layout_centerHorizontal="true"
+            android:textColor="#9C1C1C"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textViewInvalidUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20px"
+            android:layout_marginEnd="32dp"
+            android:layout_below="@id/radiogroup"
+            android:text="User not found for provided role!"
+            android:layout_centerHorizontal="true"
+            android:textColor="#9C1C1C"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textViewEmailNotVerified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radiogroup"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20px"
+            android:layout_marginEnd="32dp"
+            android:text="@string/emailVerificationText"
+            android:textColor="#9C1C1C"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewEmailNotVerified"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@color/teal_200"
+            android:text="Login" />
+
+        <TextView
+            android:id="@+id/textViewForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/login_button"
+            android:text="Forgot Password?"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/mainActivityIndeterminateProgressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/black"/>
+
+
+    <TextView
+        android:id="@+id/registerHereTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register here"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
+        android:textAlignment="center"
+        android:layout_below="@id/mainactivity_linearlayout"
+        android:textColor="@color/black_condensed"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/registerHereTextView"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/buttonPatient"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            android:text="Patient"/>
+
+        <Button
+            android:id="@+id/buttonDoctor"
+            android:layout_width="0dp"
+            android:backgroundTint="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="Doctor"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

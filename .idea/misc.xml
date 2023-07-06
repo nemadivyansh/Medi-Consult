@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/aayus/AndroidStudioProjects/MediConsult/app/src/main/res/drawable/layout_bg.xml" value="0.1" />
+        <entry key="..\:/Users/aayus/AndroidStudioProjects/MediConsult/app/src/main/res/drawable/layout_bg_itemdoctor.xml" value="0.1305" />
+        <entry key="..\:/Users/aayus/AndroidStudioProjects/MediConsult/app/src/main/res/drawable/layout_bg_profileview.xml" value="0.1305" />
+        <entry key="..\:/Users/aayus/AndroidStudioProjects/MediConsult/app/src/main/res/layout/activity_forgot_password.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/aayus/AndroidStudioProjects/MediConsult/app/src/main/res/layout/activity_login_admin.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/aayus/AndroidStudioProjects/MediConsult/app/src/main/res/layout/activity_login_doctor.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/aayus/AndroidStudioProjects/MediConsult/app/src/main/res/layout/activity_login_patient.xml" value="0.22" />
+        <entry key="..\:/Users/aayus/AndroidStudioProjects/MediConsult/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/aayus/AndroidStudioProjects/MediConsult/app/src/main/res/layout/activity_register_doctor.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/aayus/AndroidStudioProjects/MediConsult/app/src/main/res/layout/activity_register_patient.xml" value="0.25" />
+        <entry key="..\:/Users/aayus/AndroidStudioProjects/MediConsult/app/src/main/res/layout/activity_view_doctors_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/aayus/AndroidStudioProjects/MediConsult/app/src/main/res/layout/dropdown_item.xml" value="0.25" />
+        <entry key="..\:/Users/aayus/AndroidStudioProjects/MediConsult/app/src/main/res/layout/row_item_doctor.xml" value="0.15443840579710144" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
