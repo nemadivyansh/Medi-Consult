@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Medi-Consult</string>
+    <string name="app_name">Medi-Sewa</string>
     <string name="emailHint">E-mail</string>
     <string name="passwordHint">Password</string>
     <string name="invalidCredentialsMsg">Invalid Credentials</string>
@@ -17,6 +17,7 @@
         <item>Orthopedics</item>
         <item>Ophthalmology</item>
         <item>Anaesthesia</item>
+        <item>Cardiology</item>
     </string-array>
     <string name="title_activity_login_doctor">loginDoctor</string>
     <string name="prompt_email">Email</string>

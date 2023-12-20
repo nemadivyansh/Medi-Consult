@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_alignParentBottom="true"
-            android:background="@drawable/layout_bg_profileview" />
+            android:background="@drawable/wave" />
 
         <ProgressBar
             android:id="@+id/loginActivityIndeterminateProgressbar"
